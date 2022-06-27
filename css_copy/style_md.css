@@ -1,0 +1,167 @@
+/* ++++++++++++++++++++++++++++++++++++++++++++++
+@media 0 ~ 992 px
++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* @@@@@@@@@@@@@@@@@@@ 556 px  @@@@@@@@@@@@@@@@@@@ */
+
+@media (min-width:576px) {
+
+    /* ==============================================
+    html = index ; 
+    section = #intoSect
+    section = #q1 
+    section = #q2
+    section = #q3
+    section = #q4
+    section = #q5   
+    ================================================= */
+    /* +++++++ 題目框架 共用class  +++++++ */
+    .frame {
+        padding: 4rem;
+        width: 90%;
+    }
+
+    #q1 .frame,
+    #q2 .frame,
+    #q3 .frame,
+    #q4 .frame,
+    #q5 .frame {
+        padding: 1.2rem;
+    }
+
+
+    /* +++++++ #intoSect 題目框架  +++++++ */
+    .group h2 {
+        margin-bottom: 1.5rem;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+
+    .group p {
+        line-height: 1.7rem;
+        margin-bottom: 2rem;
+    }
+
+    .group .text-center a:nth-child(1) {
+        line-height: 1.7rem;
+        margin-bottom: 2rem;
+    }
+
+    /* +++++++ #intoSect Modal 內容CSS  +++++++ */
+    .modal-body {
+        padding: 4rem;
+    }
+
+    .modal p {
+        line-height: 1.7rem;
+        margin-bottom: 2rem;
+    }
+    /* groupQuestion */
+    .groupQuestion {
+        margin: 0 2rem;
+    }
+
+    /* groupInfo */
+    .groupInfo h2 {
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+
+    .groupInfo h2+p {
+        font-size: .9rem;
+    }
+    
+    /* groupChoose */
+    .btnAnswer {
+        position: relative;
+        display: block;
+        padding: .5em 0;
+        color: #000;
+        font-size: 1.2rem;
+    }
+
+
+
+}
+
+/* @@@@@@@@@@@@@@@@@@@ 768 px  @@@@@@@@@@@@@@@@@@@ */
+
+@media (min-width:768px) {
+
+    /* ==============================================
+    html = index ; 
+    section = #intoSect
+    section = #q1 
+    section = #q2
+    section = #q3
+    section = #q4
+    section = #q5   
+    ================================================= */
+    /* +++++++ 題目框架 共用class  +++++++ */
+    .frame {
+        padding: 4rem;
+    }
+
+    /* +++++++ #intoSect 題目框架  +++++++ */
+    .group h2 {
+        margin-bottom: 2rem;
+        font-size: 2.215rem;
+        line-height: 2.5rem;
+    }
+
+    .group p {
+        font-size: 1.3rem;
+        line-height: 1.9rem;
+    }
+
+    .group .text-center a:nth-child(1) {
+        margin-bottom: 2rem;
+        font-size: 1.3rem;
+        line-height: 1.9rem;
+    }
+
+    /* +++++++ #intoSect Modal 內容CSS  +++++++ */
+    .modal p {
+        font-size: 1.3rem;
+        line-height: 1.9rem;
+    }
+
+}
+
+/* @@@@@@@@@@@@@@@@@@@ 992 px @@@@@@@@@@@@@@@@@@@ */
+
+@media (min-width: 992px) {
+
+    /* ==============================================
+    main share setting
+    ================================================= */
+    /* +++++++ nav bar setting  +++++++ */
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    /* ==============================================
+    html = index ; 
+    section = #intoSect
+    section = #q1 
+    section = #q2
+    section = #q3
+    section = #q4
+    section = #q5   
+    ================================================= */
+    /* +++++++ 題目框架 共用class  +++++++ */
+    .section {
+        z-index: 10;
+        position: relative;
+        min-height: 100vh;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-align-items: center;
+        align-items: center;
+        padding-top: 3.875rem;
+    }
+}

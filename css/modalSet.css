@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+.modal-dialog {
+    position: relative;
+    width: 100%;
+    pointer-events: none;
+}
+
+.modal-content {
+    position: relative;
+}
+
+.modal-content .close {
+    position: absolute;
+    float: unset;
+    top: .5rem;
+    right: .5rem;
+    font-size: 2rem;
+    color: #8dd6e0;
+    /* text-shadow: 0 0 2px #000; */
+    opacity: 1;
+    z-index: 5;
+}
+div.d-flex {
+    z-index: -1;
+}
+
+.modal-body {
+    margin: auto;
+    padding: 2rem;
+}
+
+.close:hover,
+.close:focus {
+    color: #69d5e4;
+    text-decoration: none;
+    opacity: unset;
+}
+
+.close:focus {
+    outline: unset;
+    outline: unset;
+}
+/* @media (min-width: 576px){
+.modal-dialog {
+    width: 90%;
+    padding: 4rem;
+    max-width: unset;
+    margin: 1.75rem auto;
+}
+}
+@media (min-width: 992px){
+    .modal-dialog {
+        max-width: 800px;
+        padding: 4rem;
+    }
+    } */

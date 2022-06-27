@@ -1,0 +1,1384 @@
+/* ==============================================
+main share setting
+================================================= */
+body {
+    font-family: 'Roboto', 'Noto Sans TC', 'LiHei Pro Medium', 'Microsoft JhengHei', sans-serif;
+    background: url(../img/bg.svg) center 80%/840px 390px no-repeat #f0f0f0 fixed;
+    color: #000;
+    /* transition: all .3s ease-out; */
+    transition: all .6s ease;
+}
+
+/* +++++++ nav bar setting  +++++++ */
+
+nav {
+    position: fixed;
+    font-size: 20px;
+    font-weight: 500;
+    z-index: 300;
+}
+
+nav .navbar-brand {
+    margin-right: 0rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    cursor: unset;
+    width: 80%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 0;
+
+}
+
+nav .navbar-brand h1,
+nav .navbar-brand h2 {
+    display: inline-block;
+
+}
+
+nav .navbar-brand h1 {
+    font-size: .8rem;
+    margin-bottom: 0;
+
+}
+
+nav .navbar-brand h2 {
+    width: 34%;
+    margin-right: .3rem;
+    margin-left: 0;
+}
+
+.nav-link {
+    display: inline-block;
+}
+
+nav .navbar-brand h2 img {
+    width: 100%;
+    max-width: 125px;
+    /* vertical-align: unset; */
+}
+
+
+/* nav .navbar-brand img {
+    width: 66%;
+} */
+#vue-app .bg-light {
+    background: rgba(255, 255, 255, .9) !important;
+}
+
+.nav-item {
+    margin-top: 1rem;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding-top: .8rem;
+}
+
+#loading {
+    z-index: 2000;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+#game {
+    position: relative;
+}
+
+#img-yes,
+#img-no {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    /* background: rgba(22, 35, 255, 0.5); */
+}
+
+#img-yes .imgPosition,
+#img-no .imgPosition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+
+}
+
+#img-yes img,
+#img-no img {
+    width: 80%;
+    animation: shake 0.3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(-1%, 0%) rotate(0deg);
+    }
+
+    9% {
+        transform: translate(0%, 1%) rotate(-1deg);
+    }
+
+    18% {
+        transform: translate(1%, 2%) rotate(1deg);
+    }
+
+    27% {
+        transform: translate(2%, 1%) rotate(0deg);
+    }
+
+    36% {
+        transform: translate(1%, 0%) rotate(1deg);
+    }
+
+    45% {
+        transform: translate(0%, -1%) rotate(-1deg);
+    }
+
+    54% {
+        transform: translate(-1%, 0%) rotate(0deg);
+    }
+
+    63% {
+        transform: translate(0%, 1%) rotate(-1deg);
+    }
+
+    72% {
+        transform: translate(1%, 2%) rotate(1deg);
+    }
+
+    81% {
+        transform: translate(2%, 1%) rotate(0deg);
+    }
+
+    90% {
+        transform: translate(1%, 0%) rotate(-1deg);
+    }
+
+    100% {
+        transform: translate(0%, -1%) rotate(-1deg);
+    }
+}
+
+
+/* ==============================================
+END 
+main share setting
+================================================= */
+/* ==============================================
+html = index ; 
+section = #headerSect
+================================================= */
+#headerSect figure {
+    margin: 0 0 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-size: 0;
+    font-weight: normal;
+    line-height: 0;
+}
+
+#headerSect img {
+    width: 100%;
+    border-style: 0;
+}
+
+#headerSect {
+    background: #85d8c9;
+}
+
+#headerSect .container {
+    padding-left: 0;
+}
+
+/* 動畫 */
+/* groupTitle  */
+#headerSect .groupTitle {
+    position: relative;
+    margin-left: 15px;
+}
+
+#headerSect .groupTitle .mainTitle {
+    text-align: center;
+}
+
+#headerSect .groupTitle .mainTitle img {
+    width: 60%;
+    max-width: 386px;
+    filter: drop-shadow(0 0 2px rgba(255, 255, 255, 1))
+}
+
+#headerSect .groupTitle .subTitle {
+    margin-bottom: .5rem;
+    text-align: center;
+}
+
+#headerSect .groupTitle .subTitle img {
+    width: 50%;
+    max-width: 290px;
+    filter: drop-shadow(0 0 2px rgba(255, 255, 255, 1))
+}
+
+#headerSect .groupTitle p {
+    margin-bottom: .5rem;
+    text-align: center;
+    color: #000;
+}
+
+#headerSect .groupTitle a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+#headerSect .groupTitle .arrowBtn {
+    text-align: center;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#headerSect .groupTitle .arrowBtn img {
+    width: 10%;
+    max-width: 50px;
+    max-width: 50px;
+}
+
+#headerSect .groupTitle .cloud {
+    position: absolute;
+    bottom: -10%;
+    right: 0;
+    width: 30%;
+}
+
+
+/* groupPerson  */
+.groupPerson {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    width: 82%;
+}
+
+.groupBg {
+    position: relative;
+    z-index: 5;
+}
+
+/* img */
+.groupPerson .personBg img:nth-last-child(1) {
+    position: relative;
+    z-index: 5;
+}
+
+.groupPerson .personBg img:nth-last-child(2) {
+    position: absolute;
+    max-width: 13%;
+    bottom: 9.5%;
+    right: -15%;
+    display: block;
+    z-index: 2;
+}
+
+.groupPerson .personBg img:nth-last-child(1) {
+    position: absolute;
+    max-width: 45%;
+    height: 100%;
+    top: 0;
+    left: -40%;
+    z-index: -2;
+}
+
+/* .groupPerson .person01Success {
+position: absolute;
+width: 100%;
+
+} */
+
+/* groupPerson01 */
+.groupPerson01 {
+    position: absolute;
+    z-index: 10;
+    width: 20%;
+    top: -3.5%;
+    left: 34%;
+    z-index: 10;
+}
+
+.groupPerson01 .person01Body {
+    position: absolute;
+    z-index: 9;
+
+}
+
+.groupPerson01 .person01Bodyhand {
+    z-index: 7;
+}
+
+.groupPerson01 .person01Shadow {
+    position: absolute;
+    bottom: -10%;
+    z-index: 5;
+}
+
+
+/* groupPerson02 */
+.groupPerson02 {
+    position: absolute;
+    z-index: 10;
+    width: 31.5%;
+    top: 47%;
+    left: 22.5%;
+    z-index: 10;
+}
+
+.groupPerson02 .groupPerson02Div {
+    position: relative;
+}
+
+.groupPerson02 .groupPerson02Div .person02Object {
+    position: absolute;
+    top: -16%;
+    z-index: 9;
+}
+
+.groupPerson02 .groupPerson02Div .person02Body {
+    position: relative;
+    z-index: 10;
+}
+
+.groupPerson02 .groupPerson02Div .person02Shadow {
+    position: absolute;
+    z-index: 6;
+    bottom: -6%;
+}
+
+/* groupPerson03 */
+.groupPerson03 {
+    position: absolute;
+    z-index: 15;
+    width: 31.5%;
+    right: -3%;
+    top: 29%;
+}
+
+.groupPerson03 .person03Money {
+    position: relative;
+}
+
+.groupPerson03 .person03Money .person03Money01 {
+    position: absolute;
+    z-index: 14;
+    width: 100%;
+}
+
+.groupPerson03 .person03Money .person03Money02 {
+    position: absolute;
+    z-index: 13;
+    width: 100%;
+}
+
+.groupPerson03 .person03Money .person03Money03 {
+    position: absolute;
+    z-index: 12;
+    width: 100%;
+}
+
+.groupPerson03 .person03Money .person03Money04 {
+    position: absolute;
+    z-index: 11;
+    width: 100%;
+}
+
+/* ==============================================
+html = index ; 
+section = #game-0
+section = #game-1 
+section = #game-2
+section = #game-3
+section = #game-4
+section = #game-5
+section = #hintTrue
+sectine = #HintFalse 
+sectine = #process
+================================================= */
+
+/* +++++++ 題目框架 共用class  +++++++ */
+.section {
+    z-index: 10;
+    position: relative;
+    min-height: 100vh;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding-top: 3.5rem;
+}
+
+.game {
+    position: relative;
+}
+
+.frame {
+    margin: auto;
+    width: 100%;
+    padding: 1.5rem;
+    background-color: #fff;
+    box-shadow: 0 0px 2px 0px rgba(80, 80, 80, .15);
+}
+
+#game-1 .frame,
+#game-2 .frame,
+#game-3 .frame,
+#game-4 .frame,
+#game-5 .frame,
+#p1 .frame,
+#p2 .frame,
+#p3 .frame,
+#p4 .frame,
+#p5 .frame,
+#p6 .frame,
+#p7 .frame {
+    padding: 1rem .8rem;
+    width: 100%;
+}
+
+.btnMain {
+    display: inline-block;
+    margin: auto;
+    margin-top: .5rem;
+    padding: .3rem 1rem;
+    background-color: #47c3d4;
+    color: #fff000;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    transition: all .6s ease;
+}
+
+.btnMain:hover {
+
+    background-color: #fff000;
+    color: #47c3d4;
+    text-decoration: none;
+
+}
+
+/* groupInfo */
+.groupInfo h2 {
+    margin-bottom: .5rem;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.groupInfo h2 span {
+    z-index: 1;
+    position: relative;
+    /* padding: 0.25rem .5rem; */
+}
+
+.groupInfo h2 span:nth-child(1) {
+    font-size: 1.8rem;
+    padding-right: .5rem;
+    color: #ff886c;
+}
+
+.groupInfo h2+p {
+    font-size: .8rem;
+    margin-bottom: .8rem;
+}
+
+/* groupQuestion */
+.groupQuestion {
+    padding-bottom: 2rem;
+}
+
+.groupQuestion h2 {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+
+/* groupChoose */
+
+.btnAnswer {
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    padding: .2rem 0 .7rem;
+    color: #000;
+    /* width: 70%; */
+}
+
+#game-1 .btnAnswer {
+    width: 29%;
+
+}
+
+#game-2 .btnAnswer {
+    width: 39%;
+}
+
+#game-3 .btnAnswer {
+    width: 46%;
+}
+
+#game-4 .btnAnswer {
+    width: 93%;
+}
+
+#game-5 .btnAnswer {
+    width: 39%;
+}
+
+
+.btnAnswer:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.btnAnswer span {
+    position: relative;
+    z-index: 2;
+}
+
+.btnAnswer span:before {
+    z-index: -1;
+    position: absolute;
+    width: 0%;
+    height: .7rem;
+    background-color: #f1d933;
+    left: 0;
+    right: 0;
+    bottom: -4px;
+    content: "";
+
+    -moz-transition: width .4s ease;
+    -o-transition: width .4s ease;
+    -webkit-transition: width .4s ease;
+    transition: width .4s ease;
+    content: "";
+}
+
+.btnAnswer:hover span:before {
+    width: 100%;
+}
+
+/* groupPic */
+.groupPic {
+    position: relative;
+    margin: -2rem auto 0;
+    width: 50%;
+    max-width: 200px;
+}
+
+.q1Shadow,
+.q1Hand,
+.q1Body {
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+/* +++++++ #game-0 題目框架  +++++++ */
+#game-0 .text-center a:nth-child(1) {
+    color: #0088cc;
+}
+
+#game-0 .text-center a:nth-child(1):hover {
+    color: #ff886c;
+    text-decoration: none;
+    transition: all .6s ease;
+}
+
+#game-0 .group p:nth-last-child(2) {
+    font-size: .6rem;
+    font-weight: 300;
+}
+
+
+.group h2 {
+    /* margin-bottom: 1.2rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    text-align: center; */
+    margin-bottom: 1.2rem;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.group h2 span {
+    z-index: 1;
+    position: relative;
+    padding: 0.25rem .5rem;
+}
+
+.group h2 span::before {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: .7rem;
+    background-color: #8dd6e0;
+    left: 0;
+    right: 0;
+    bottom: 5px;
+    content: "";
+}
+
+.group p {
+    text-align: justify;
+    font-weight: 400;
+    font-size: .8rem;
+}
+
+.group .text-center a:nth-child(1) {
+    display: block;
+    font-size: .8rem;
+    margin-bottom: .5rem;
+    font-weight: 200;
+}
+
+/* +++++++ #game-0 Modal 內容CSS  +++++++ */
+.modal-body {
+    padding: 2rem;
+}
+
+.modal h2 {
+    margin-bottom: 1.2rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.modal h2 span {
+    z-index: 1;
+    position: relative;
+    padding: 0.25rem .5rem;
+}
+
+.modal h2 span::before {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: .7rem;
+    background-color: #8dd6e0;
+    left: 0;
+    right: 0;
+    bottom: 5px;
+    content: "";
+}
+
+.modal p {
+    text-align: justify;
+    font-size: .8rem;
+    font-weight: 400;
+    font-size: .8rem;
+}
+
+.modal .modal-body ul {
+    padding-left: 12px;
+    text-align: justify;
+}
+
+.modal .modal-body ul li {
+    margin-bottom: .5rem;
+    font-size: .7rem;
+    font-weight: 400;
+    list-style: decimal;
+    list-style-position: outside;
+    margin-left: 0;
+}
+
+.modal-body #modal-content a {
+    display: block;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+    background: #dd553e;
+    width: 100%;
+    max-width: unset;
+    height: unset;
+    max-height: unset;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.modal-body #modal-content a:hover {
+    box-shadow: inset 0px 0px 20px 20px rgba(201, 68, 45, .8);
+    text-decoration: none;
+
+}
+
+/* popUpTel */
+.modal#popUpTel h2+p,
+.modal#popUpTel ul li:nth-child(1) {
+    font-weight: 700;
+
+}
+
+.modal#popUpTel p {
+    margin-bottom: 0;
+    text-align: center;
+
+}
+
+.modal#popUpTel ul {
+    margin-top: 1rem;
+}
+
+.modal#popUpTel ul li {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.modal#popUpTel ul li:nth-child(1) {
+    margin-bottom: .3rem;
+}
+
+.modal#popUpTel ul li:nth-child(2),
+.modal#popUpTel ul li:nth-child(3),
+.modal#popUpTel ul li:nth-child(4),
+.modal#popUpTel ul li:nth-child(5) {
+    /* color: #dd553e; */
+}
+
+.modal#popUpTel ul li:nth-child(4) {
+    margin-top: .5rem;
+    padding-top: .5rem;
+    border-top: 1px solid #ccc;
+}
+
+/* +++++++ section = #hinttrue & section = #hintFalse 設定值  +++++++ */
+#hintTrue.hint {
+    /* position: absolute; */
+    z-index: 200;
+    width: 100%;
+    height: 100vh;
+    background: #0088cc
+        /*    
+    width: 100%;
+    height: 100vh;
+    padding-top: 1rem;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    pointer-events: none;
+    background: #0088cc;
+} */
+}
+
+#hintTrue .answerTrue {
+    width: 48.5rem;
+}
+
+/* +++++++ div = #process 共用設定值  +++++++ */
+#process img {
+    width: 100%;
+}
+
+#p1 .groupInfo h2 span:nth-child(1),
+#p2 .groupInfo h2 span:nth-child(1),
+#p3 .groupInfo h2 span:nth-child(1),
+#p4 .groupInfo h2 span:nth-child(1),
+#p5 .groupInfo h2 span:nth-child(1),
+#process #p6 .groupInfo h2 span:nth-child(1) {
+    font-size: unset;
+    padding-right: unset;
+    color: unset;
+}
+
+.groupPrize {
+    position: relative;
+}
+
+.groupPrize figure {
+    margin-bottom: 0;
+}
+
+.groupPrize figure figcaption {
+    margin-top: .3rem;
+    color: #6c6c6c;
+    font-size: .8rem;
+    line-height: 1rem;
+}
+
+.row.groupPrize figure figcaption span {
+    display: block;
+}
+
+.row.groupPrize figure p {
+    color: #dd553e;
+    font-size: .75rem;
+}
+
+/* .groupPrize .col-6:nth-child(1) figure {
+    padding-left: 10px;
+}
+
+.groupPrize .col-6:nth-child(2) figure {
+    padding-right: 10px;
+} */
+.groupPrize {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.groupPrize .col-6 {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.row.groupPrize+.text-center {
+    margin-top: .7rem;
+    margin-bottom: 4px;
+
+}
+
+.btnMainSec {
+    position: relative;
+    padding: .1rem .2rem;
+    top: 0;
+    font-size: 1.5rem;
+    background: #dd553e;
+    border-radius: 8px;
+    box-shadow: 3px 3px 0 #bb432a;
+    color: #fff;
+    transition: all .1s ease-out;
+    padding: .1rem 3rem;
+}
+
+
+.btnMainSec:hover {
+    top: 3px;
+    left: 3px;
+    box-shadow: 0 0 0 #bb432a;
+    color: #fff;
+    text-decoration: none;
+}
+
+#p3 .groupInfo h2,
+#p4 .groupInfo h2,
+#p5 .groupInfo h2,
+#p6 .groupInfo h2 {
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+#p3 .groupInfo h2 span::before,
+#p5 .groupInfo h2 span::before,
+#p6 .groupInfo h2 span::before {
+    z-index: -1;
+    position: absolute;
+    width: 110%;
+    height: .7rem;
+    background-color: #8dd6e0;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    content: "";
+
+}
+
+
+/* +++++++ div = #p1  +++++++ */
+#p1 {
+    position: relative;
+}
+
+#p1 .groupPrize .isNothing {
+    position: absolute;
+    top: -8%;
+}
+
+#p1 .groupInfo h2 {
+    font-size: 2rem;
+    line-height: 2.3rem;
+}
+
+#p1 .groupInfo h2+p {
+    font-size: .9rem;
+    line-height: 1.3rem;
+}
+
+/* +++++++ div = p1GroupAction  +++++++ */
+.p1GroupAction,
+.p1GroupAction2 {
+    position: absolute;
+    display: none;
+    width: 100%;
+    bottom: 0%;
+    z-index: -1;
+}
+
+.p1GroupAction .p1Pic {
+    position: absolute;
+    width: 20%;
+    max-width: 176px;
+    right: 1%;
+    bottom: 87%;
+    z-index: 10;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 1))
+}
+
+.p1GroupAction .p1Bg,
+.p1GroupAction2 .p1Bg {
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.p1GroupAction2 {
+    z-index: -1;
+    display: none;
+}
+
+
+
+/* +++++++ div = #p2  +++++++ */
+#p2 .groupInfo h2 {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    font-weight: 700;
+}
+
+#p2 .row.groupLogin {
+    margin-top: .5rem;
+    margin-right: 15px;
+    margin-left: 15px;
+
+}
+
+#p2 .row.groupLogin a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background: #dd553e;
+    width: 30vmin;
+    max-width: 144px;
+    height: 30vmin;
+    max-height: 144px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+#p2 .row.groupLogin a:hover {
+    background: #dd553e;
+    box-shadow: inset 0px 0px 20px 20px rgba(201, 68, 45, .8);
+    color: #fff;
+    text-decoration: none;
+
+}
+
+#p2 .row.groupLogin a#btn-login {
+    background: #47c3d4;
+}
+
+#p2 .row.groupLogin a#btn-login:hover {
+    background: #47c3d4;
+    box-shadow: inset 0px 0px 20px 20px rgba(43, 170, 187, .8);
+}
+
+#p2 .row.groupLogin a#dualCheck {
+    display: block;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+    background: #dd553e;
+    width: 100%;
+    max-width: unset;
+    height: unset;
+    max-height: unset;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#p2 .row.groupLogin a#dualCheck:hover {
+    box-shadow: inset 0px 0px 20px 20px rgba(201, 68, 45, .8);
+
+}
+
+#p2 .row.groupAd {
+    margin-right: -4px;
+    margin-left: -4px;
+}
+
+#p2 .row.groupAd .col-6 {
+    padding-right: 4px;
+    padding-left: 4px;
+}
+
+#p2 .row.groupAd .col-6:nth-child(1),
+#p2 .row.groupAd .col-6:nth-child(2) {
+    margin-bottom: 8px;
+}
+
+/* #p2 groupPic */
+#p2 .groupPic {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    width: 90%;
+}
+
+#p2 .groupPic .p2Body {
+    position: relative;
+    z-index: 10;
+}
+
+#p2 .groupPic .p2Shadow {
+    position: absolute;
+    top: 0;
+}
+
+#p2 .groupPic .p2Hand {
+    position: absolute;
+    top: 0;
+    z-index: 5;
+}
+#p2 .groupMatter p  {
+    text-align: center;
+}
+
+#p2 .groupMatter a  {
+    color: #007bff;
+    text-decoration: none;
+}
+#p2 .groupMatter a:hover {
+    color: #007bff;
+
+}
+
+/* +++++++ div = #p3  +++++++ */
+#p3 .form-check-input {
+    position: relative;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: .5rem;
+}
+
+#p3 .form-check {
+    padding-left: 0rem;
+    position: relative;
+}
+
+#p3 .form-check .isNothing {
+    position: absolute;
+    top: 1%;
+}
+
+
+#p3 input[type=radio] {
+    zoom: 200%;
+    border: 1px solid #8c8c8c;
+    background: #f0f0f0;
+}
+
+
+#p3 .btnMainSec {
+    padding: .1rem 3rem;
+}
+
+#p3 .form-check p {
+    margin-bottom: .8rem;
+
+}
+
+#p3 .col-8 .form-check p {
+    color: transparent;
+
+}
+
+/* +++++++ div = #p4  +++++++ */
+#p4 .frame {
+    /* padding: 1rem .8rem; */
+    padding: 0 0;
+    width: 100%;
+}
+
+#p4 .groupInfo h2 {
+    padding-top: 1rem;
+    padding-right: .8rem;
+    padding-left: .8rem;
+    color: #dd553e;
+    margin-bottom: 0;
+
+}
+
+#p4 .groupInfo h2+p {
+    margin-bottom: .8rem;
+    padding-right: .8rem;
+    padding-left: .8rem;
+    text-align: center;
+    font-size: 1.18rem;
+}
+
+#p4 .groupPrize figure {
+    margin: 2rem auto;
+    padding-right: .8rem;
+    padding-left: .8rem;
+    width: 70%;
+}
+
+#p4 .groupPlue h2 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    /* margin-bottom: 2rem; */
+    margin-bottom: 1rem;
+    padding-right: .8rem;
+    padding-left: .8rem;
+    color: #dd553e;
+    font-size: 1.25rem;
+    font-weight: 400;
+
+}
+
+#p4 .groupPlue h2 span:nth-child(2) {
+    margin-top: 0.2rem;
+    padding: .3rem .7rem;
+    /* color: #fff;
+    background: #dd553e; */
+    /* transition: all .6s ease; */
+
+}
+
+/* 
+#p4 .groupPlue h2 span:nth-child(2):hover {
+    color: #dd553e;
+    background: #fff000;
+} */
+
+
+#p4 .groupMatter {
+    padding: 1rem .8rem;
+    background: #d8d8d8;
+    font-size: .8rem;
+    text-align: center;
+}
+
+#p4 .groupMatter p {
+    margin-bottom: 0;
+}
+
+
+/* +++++++ div = #p5  +++++++ */
+#p5 .groupInfo h2 {
+    margin-bottom: .5rem;
+}
+
+#p5 .groupInfo h2+p {
+    margin-bottom: .5rem;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+#p5 .groupPrize figure {
+    width: 20%;
+    margin: 0 auto .5rem;
+}
+
+#p5 .col-form-label,
+#p5 .form-check-label {
+    font-size: .9rem;
+
+}
+
+#p5 .row {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: .5rem;
+
+}
+
+#p5 .form-group:nth-child(1),
+#p5 .form-group:nth-child(2),
+#p5 .form-group:nth-child(3),
+#p5 .form-group:nth-child(4),
+#p5 .form-group:nth-child(5) {
+    display: flex;
+    margin-bottom: .4rem;
+}
+
+#p5 .form-group:nth-child(1) label,
+#p5 .form-group:nth-child(2) label,
+#p5 .form-group:nth-child(3) label,
+#p5 .form-group:nth-child(4) label,
+#p5 .form-group:nth-child(5) label {
+    width: 40%;
+}
+
+#p5 .form-group.text-center {
+    display: block;
+}
+
+#p5 .inputBox {
+    width: 60%;
+}
+
+#p5 input,
+#p5 select {
+    background: #e4e4e4;
+    border-radius: 0;
+    border: unset
+}
+
+#p5 .btnMainSec {
+    padding: .1rem 3rem;
+}
+
+#p5 input[type=checkbox] {
+    zoom: 150%;
+    border: 1px solid #8c8c8c;
+    background: #f0f0f0;
+    margin-left: 0;
+    margin-top: .1rem;
+}
+
+#p5 .form-check-label {
+    padding-left: 2rem;
+}
+
+
+
+/* 
+#p5 .form-check-input {
+    margin-top: .05rem;
+
+} */
+
+/* 
+#p5 .form-check {
+    padding-left: 2rem; 
+}
+margin-top: 0; */
+
+#p5 .form-check {
+    position: relative;
+    display: block;
+    padding-left: 1rem;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    /* body { background-color: blue; }
+} */
+}
+
+
+/* +++++++ div = #p6  +++++++ */
+
+#p6 .groupGet,
+#p6 .groupApplewatch,
+#p6 .notApplewatch {
+    margin-bottom: .5rem;
+    background: #f0f0f0;
+}
+
+#p6 .groupInfo h2 {
+    margin-bottom: 1rem;
+}
+
+.groupGet,
+.groupApplewatch,
+.notApplewatch,
+.notAction {
+    padding: .5rem 1rem .6rem;
+}
+
+.groupGet p,
+.groupApplewatch p,
+.notApplewatch p,
+.notAction p {
+    text-align: center;
+    margin-bottom: .2rem;
+    font-size: .9rem;
+}
+
+.groupGet figure {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.getSn {
+    text-align: center;
+    padding: .5rem 1rem;
+    background: #fff;
+    font-size: 1rem;
+    color: #dd553e;
+    font-weight: 700;
+}
+
+
+.groupApplewatch figure {
+    margin: .2rem auto;
+    width: 27%;
+}
+
+#p6 .groupInfo h2+p {
+    font-size: .9rem;
+
+}
+
+#p6 .groupPosition:nth-last-child(1) {
+    margin-bottom: 0;
+}
+
+#p6 .btnMainSec {
+    padding: .1rem 3rem;
+}
+
+.notApplewatch p,
+.notAction p {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+#p6 .groupShare ul {
+    list-style: none;
+    margin-bottom: 0;
+    padding-inline-start: 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+#p6 .groupShare ul li {
+    display: inline-block;
+    padding-left: 0;
+    max-width: 36px;
+    margin: 0 .6em;
+
+}

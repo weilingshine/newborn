@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #obj {
+            position: relative;
+            left: 0px;
+            top: 0px;
+            width: 50px;
+            height: 50px;
+            background: #6fb936;
+            border-radius: 5px;
+        }
+        #obj2 {
+            position: relative;
+            left: 200px;
+            top: 20px;
+            width: 50px;
+            height: 50px;
+            background: #0088cc;
+            border-radius: 5px;
+        }
+        #obj3 {
+            position: relative;
+            left:300px;
+            top: 40px;
+            width: 50px;
+            height: 50px;
+            background: red;
+            border-radius: 5px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="obj"></div>
+    <div id="obj2"></div>
+    <div id="obj3"></div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script>
+        // TweenMax.to("#obj", 3, {left:500});
+        // TweenLite.fromTo('#obj', 2, {opacity:1}, {opacity:0});
+        // TweenMax.to("#obj", 3, {top:500},{top:0});
+        // // TweenLite.to("#obj", 1, {left:100});
+        // TweenMax.to("#obj", 1, {top:50, delay:2});//延迟1秒，接续前一个动画
+        // var tl = new TimelineLite();
+        // tl.add( TweenLite.to("#obj", 1, {left:100}) );//将一个动画添加到时间轴
+        // tl.add( TweenLite.to("#obj2", 1, {top:50}) );//将一个动画添加到时间轴末端，即与前一个动画接续
+        // tl.add( TweenLite.to("#obj3", 1, {opacity:0}) ); //将一个动画添加到时间轴末端，即与前一个动画接续
+        var tl = new TimelineLite();
+        // tl.to("#obj", 1, {left:100}).to("#obj2", 1, {top:50}).to("#obj3", 1, {opacity:0});
+        tl.add( TweenMax.to("#obj2", 2, {left:100}) );
+    </script>
+</body>
+
+</html> 

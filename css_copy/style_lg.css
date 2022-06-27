@@ -1,0 +1,38 @@
+/* ++++++++++++++++++++++++++++++++++++++++++++++
+@media 993px ~ max
++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+@media (min-width:992px) {
+
+    /* ==============================================
+    html = index ; 
+    section = #intoSect
+    section = #q1 
+    section = #q2
+    section = #q3
+    section = #q4
+    section = #q5   
+    ================================================= */
+    /* +++++++ 題目框架 共用class  +++++++ */
+    .frame {
+        width: 70%;
+        max-width: 700px;
+    }
+
+    /* +++++++ #intoSect 題目框架  +++++++ */
+    .group p {
+        font-size: 1.3rem;
+        line-height: 1.9rem;
+    }
+    .group .text-center a:nth-child(1) {
+        font-size: 1.215rem;
+        line-height: 1.9rem;
+    }
+      /* +++++++ #intoSect Modal 內容CSS  +++++++ */
+      .modal p {
+        font-size: 1.3rem;
+        line-height: 1.9rem;
+    }
+    
+
+}

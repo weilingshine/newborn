@@ -1,0 +1,62 @@
+/* ++++++++++++++++++++++++++++++++++++++++++++++
+@media 993px ~ max
++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+@media (min-width:1200px) {
+    #game-1 .btnAnswer {
+        width: 21%;
+    }
+    #game-2 .btnAnswer {
+        width: 31%;
+    }
+    #game-3 .btnAnswer {
+        width: 37%;
+    }
+    #game-4 .btnAnswer {
+        width: 73%;
+    }
+    #game-5 .btnAnswer {
+        width: 31%;
+    }
+    
+}
+
+@media (min-width:1440px) {
+
+    /* ==============================================
+html = index ;  
+section = #headerSect
+================================================= */
+    /* 動畫 */
+    #headerSect .container {
+        max-width: 90%;
+        margin-top: 1rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #headerSect .groupTitle .mainTitle img {
+        width: 100%;
+    }
+
+    #headerSect .groupTitle .subTitle img {
+        width: 100%;
+    }
+
+}
+
+@media (min-width:1500px) {
+
+    /* ==============================================
+html = index ; 
+section = #headerSect
+================================================= */
+    /* 動畫 */
+    #headerSect .container {
+        max-width: 80%;
+        margin-top: 1rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+}
